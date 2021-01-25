@@ -1,3 +1,4 @@
+//const password = require('/home/pi/mylab/ip/password.conf')
 const password = require('./password.conf')
 const rc4 = require("crypto-js/rc4");
 const fs = require('fs');
@@ -6,7 +7,7 @@ const request = require('request');
 function genInfo(txt, password){
   const text = rc4.encrypt(txt, password, { iv: '' })
   const content = "window.content='" + text+"'";
-  fs.writeFile('./content.js', content, err => {
+  fs.writeFile('./content.js', content, function(err){
     if(err) {
       console.error(err);
       return
