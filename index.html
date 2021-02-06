@@ -17,6 +17,7 @@
     document.getElementById('gen').addEventListener('keyup',(e)=>{
       if(e.keyCode === 13) {
         console.info(getAesString( content, e.target.value, ''))
+	document.body.innerHTML = getAesString( content, e.target.value, '');
       }
     })
     // console.log(getAesString( content, 'qwerty', ''))
