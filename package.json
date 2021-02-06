@@ -1,0 +1,27 @@
+{
+  "name": "ip",
+  "version": "1.0.0",
+  "description": "encryption",
+  "main": "index.js",
+  "scripts": {
+    "build": "node main.js",
+    "start": "live-server . --port=80 "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stalker-silence/ip.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stalker-silence/ip/issues"
+  },
+  "homepage": "https://github.com/stalker-silence/ip#readme",
+  "dependencies": {
+    "crypto-js": "^4.0.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "request": "^2.88.2"
+  }
+}
