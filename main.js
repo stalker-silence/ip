@@ -21,7 +21,7 @@ function genData(){
   request.get({
     url:'http://ip.tool.lu'
   }, function(err, response, body){
-    genInfo(body, password.password);
+    genInfo(body, password.password + new Date().getHours());
     // console.log(body)
   })
 }
