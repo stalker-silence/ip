@@ -6,8 +6,9 @@ const request = require('request');
 
 function genInfo(txt, password){
   const text = rc4.encrypt(txt, password, { iv: '' })
+  console.log(text)
   const content = "window.content='" + text+"'";
-  fs.writeFile('./content.js', content, function(err){
+  fs.writeFile(__dirname+'/content.js', content, function(err){
     if(err) {
       console.error(err);
       return
