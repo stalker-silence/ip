@@ -26,7 +26,7 @@ function genData(){
   })
 }
 
-setInterval(genData, 1000 * 60 * 10)
+//setInterval(genData, 1000 * 60 * 10)
 genData();
 
 console.log(new Date())
